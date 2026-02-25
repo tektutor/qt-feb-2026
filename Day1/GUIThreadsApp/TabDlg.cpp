@@ -12,6 +12,13 @@ TabDlg::TabDlg(QString tabTitle ) {
 	setLayout ( pLayout );
 
 	pThread = new Thread(tabTitle);
+
+	connect (
+		pThread,
+		SIGNAL ( threadMsg( QString ) ),
+		this,
+		SLOT ( onThreadMessage( QString ) )
+	);
 }
 
 void TabDlg::onStartThread(QString threadName) {
@@ -22,4 +29,8 @@ void TabDlg::onStartThread(QString threadName) {
 void TabDlg::onStopThread(QString threadName) {
 	if ( 0 == tabTitle.compare( threadName ) )
 		pThread->terminate();
+}
+
+void TabDlg::onThreadMessage( QString msg ) {
+	pListWidget->addItem( msg );
 }

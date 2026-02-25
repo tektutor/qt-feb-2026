@@ -18,4 +18,5 @@ public:
 private slots:
 	void onStartThread(QString);
 	void onStopThread(QString);
+	void onThreadMessage(QString);
 };

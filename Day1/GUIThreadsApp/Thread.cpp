@@ -12,6 +12,7 @@ void Thread::run() {
     for ( int i=0; i<30000; ++i ) {
 	strMsg = "Message from thread ";
 	strMsg.append( name );
+	strMsg.append( " " );
 
 	strTemp.setNum ( i );
 	strMsg.append ( strTemp );
