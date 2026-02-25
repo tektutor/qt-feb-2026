@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ConsoleBasedThreads_FILE /home/jegan/qt-feb-2026/Day1/ConsoleBasedThreads/ConsoleBasedThreads)
+set(__QT_DEPLOY_TARGET_ConsoleBasedThreads_TYPE EXECUTABLE)

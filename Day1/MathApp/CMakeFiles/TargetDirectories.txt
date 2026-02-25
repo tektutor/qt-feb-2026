@@ -1,0 +1,9 @@
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/MathApp.dir
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/edit_cache.dir
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/rebuild_cache.dir
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/list_install_components.dir
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/install.dir
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/install/local.dir
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/install/strip.dir
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/MathApp_autogen_timestamp_deps.dir
+/home/jegan/qt-feb-2026/Day1/MathApp/CMakeFiles/MathApp_autogen.dir
