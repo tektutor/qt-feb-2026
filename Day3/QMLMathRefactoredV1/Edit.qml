@@ -9,6 +9,7 @@ Rectangle {
 
 	property alias value: textInput.text 
 
+
 	TextInput {
 		id: textInput
 

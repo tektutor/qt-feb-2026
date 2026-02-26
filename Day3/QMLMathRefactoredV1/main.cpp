@@ -11,8 +11,8 @@ int main(int argc, char **argv) {
 
 	QQmlApplicationEngine engine("main.qml");
 
-	MyMath myMath;
-	engine.rootContext()->setContextProperty("MyMath", &myMath);
+	//MyMath myMath;
+	//engine.rootContext()->setContextProperty("MyMath", &myMath);
 
 	return theApp.exec();
 }

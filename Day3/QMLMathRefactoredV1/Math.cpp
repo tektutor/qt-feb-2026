@@ -1,6 +1,9 @@
 #include "Math.h"
 
 MyMath::MyMath(QObject *parent): QObject(parent) {
+	qInfo() << "Information ...";
+	qWarning() << "Warning ...";
+	qCritical() << "Critical ...";
 	qDebug() << "MyMath constructor ...";
 }
 
