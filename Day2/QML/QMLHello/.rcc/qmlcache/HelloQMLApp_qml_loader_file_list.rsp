@@ -1,0 +1,5 @@
+--resource
+/home/jegan/qt-feb-2026/Day2/QML/QMLHello/.qt/rcc/qmake_App.qrc
+--resource
+/home/jegan/qt-feb-2026/Day2/QML/QMLHello/.qt/rcc/HelloQMLApp_raw_qml_0.qrc
+/qt/qml/App/main.qml

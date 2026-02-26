@@ -1,0 +1,5 @@
+--resource
+/home/jegan/qt-feb-2026/Day2/QML/Calculator/.qt/rcc/qmake_App.qrc
+--resource
+/home/jegan/qt-feb-2026/Day2/QML/Calculator/.qt/rcc/Calculator_raw_qml_0.qrc
+/qt/qml/App/calculator.qml

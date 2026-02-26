@@ -1,0 +1,10 @@
+--bare
+-I
+/home/jegan/qt-feb-2026/Day2/QML/QMLHello
+-I
+/usr/lib64/qt6/qml
+--resource
+/home/jegan/qt-feb-2026/Day2/QML/QMLHello/.qt/rcc/qmake_App.qrc
+--resource
+/home/jegan/qt-feb-2026/Day2/QML/QMLHello/.qt/rcc/simpleqml_raw_qml_0.qrc
+/home/jegan/qt-feb-2026/Day2/QML/QMLHello/main.qml

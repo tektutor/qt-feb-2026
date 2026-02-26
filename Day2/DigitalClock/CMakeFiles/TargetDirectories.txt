@@ -1,0 +1,5 @@
+/home/jegan/qt-feb-2026/Day2/DigitalClock/CMakeFiles/DigitalClock.dir
+/home/jegan/qt-feb-2026/Day2/DigitalClock/CMakeFiles/edit_cache.dir
+/home/jegan/qt-feb-2026/Day2/DigitalClock/CMakeFiles/rebuild_cache.dir
+/home/jegan/qt-feb-2026/Day2/DigitalClock/CMakeFiles/DigitalClock_autogen_timestamp_deps.dir
+/home/jegan/qt-feb-2026/Day2/DigitalClock/CMakeFiles/DigitalClock_autogen.dir

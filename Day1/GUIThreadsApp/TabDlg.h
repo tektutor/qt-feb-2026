@@ -13,8 +13,12 @@ private:
 	QHBoxLayout *pLayout;
 	Thread *pThread;
 	QString tabTitle;
+	bool isCreated;
+	bool isRunning;
 public:
 	TabDlg(QString);
+	bool isThreadCreated();
+	bool isThreadRunning();
 private slots:
 	void onStartThread(QString);
 	void onStopThread(QString);

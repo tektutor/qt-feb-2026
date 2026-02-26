@@ -12,6 +12,8 @@ TabDlg::TabDlg(QString tabTitle ) {
 	setLayout ( pLayout );
 
 	pThread = new Thread(tabTitle);
+	isCreated = true;
+	isRunning = false;
 
 	connect (
 		pThread,
@@ -19,18 +21,31 @@ TabDlg::TabDlg(QString tabTitle ) {
 		this,
 		SLOT ( onThreadMessage( QString ) )
 	);
+
 }
 
 void TabDlg::onStartThread(QString threadName) {
-	if ( 0 == tabTitle.compare( threadName ) )
+	if ( 0 == tabTitle.compare( threadName ) ) {
 		pThread->start();
+		isRunning = true;
+	}
 }
 
 void TabDlg::onStopThread(QString threadName) {
-	if ( 0 == tabTitle.compare( threadName ) )
+	if ( 0 == tabTitle.compare( threadName ) ) {
 		pThread->terminate();
+		isRunning = false;
+	}
 }
 
 void TabDlg::onThreadMessage( QString msg ) {
 	pListWidget->addItem( msg );
+}
+
+bool TabDlg::isThreadRunning() {
+	return isRunning;
+}
+
+bool TabDlg::isThreadCreated() {
+	return isCreated;
 }

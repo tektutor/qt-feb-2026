@@ -4,6 +4,8 @@ MainDlg::MainDlg() {
 
 	tabIndex = 0;
 
+	setWindowTitle ( "Multithread App" );
+
 	pTopLayout = new QHBoxLayout;
 	pTabWidget = new QTabWidget;
 	pTopLayout->addWidget ( pTabWidget );
@@ -50,7 +52,29 @@ MainDlg::MainDlg() {
 		this,
 		SLOT ( onExitAppButtonClicked() )
 	);
+
+	connect (
+		pTabWidget,
+		SIGNAL( currentChanged(int) ),
+		this,
+		SLOT ( onTabSwitched(int ) )
+	);
 }
+
+void MainDlg::onTabSwitched( int index ) {
+
+	TabDlg *pTabDlg = dynamic_cast<TabDlg*>(pTabWidget->currentWidget());
+
+	if ( pTabDlg->isThreadRunning() ) {
+		pStartBttn->setEnabled(false);
+		pStopBttn->setEnabled(true);
+	}
+	else {
+		pStartBttn->setEnabled(true);
+		pStopBttn->setEnabled(false);
+	}
+}
+
 void MainDlg::onNewThreadButtonClicked() {
 	qDebug() << "New Thread Button clicked ...";
 
@@ -81,6 +105,8 @@ void MainDlg::onStartThreadButtonClicked() {
 	qDebug() << "Start Thread Button clicked ...";
 
 	emit startThread(pTabWidget->tabText( pTabWidget->currentIndex() ));
+	pStartBttn->setEnabled(false);
+	pStopBttn->setEnabled(true);
 
 }
 
@@ -88,6 +114,8 @@ void MainDlg::onStopThreadButtonClicked() {
 	qDebug() << "Stop Thread Button clicked ...";
 
 	emit stopThread( pTabWidget->tabText ( pTabWidget->currentIndex() ) );
+	pStartBttn->setEnabled(true);
+	pStopBttn->setEnabled(false);
 }
 
 

@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+4598ed016c7f2596b968bb6308b145f1 CMakeFiles/DigitalClock_autogen
+dba8c38ea1132adf0d322b2ba50f3548 DigitalClock_autogen/timestamp

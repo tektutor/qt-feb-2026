@@ -1,0 +1,20 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 11
+                    }
+                ],
+                "filePath": "/home/jegan/qt-feb-2026/Day2/QML/QMLHello/main.qml"
+            }
+        ],
+        "moduleId": "App(HelloQMLApp)"
+    }
+]

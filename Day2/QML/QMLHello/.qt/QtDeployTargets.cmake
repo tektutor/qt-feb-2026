@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_HelloQMLApp_FILE /home/jegan/qt-feb-2026/Day2/QML/QMLHello/HelloQMLApp)
+set(__QT_DEPLOY_TARGET_HelloQMLApp_TYPE EXECUTABLE)

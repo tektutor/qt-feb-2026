@@ -1,0 +1,5 @@
+/home/jegan/qt-feb-2026/Day1/GUIThreadsApp/CMakeFiles/GUIThreadsApp.dir
+/home/jegan/qt-feb-2026/Day1/GUIThreadsApp/CMakeFiles/edit_cache.dir
+/home/jegan/qt-feb-2026/Day1/GUIThreadsApp/CMakeFiles/rebuild_cache.dir
+/home/jegan/qt-feb-2026/Day1/GUIThreadsApp/CMakeFiles/GUIThreadsApp_autogen_timestamp_deps.dir
+/home/jegan/qt-feb-2026/Day1/GUIThreadsApp/CMakeFiles/GUIThreadsApp_autogen.dir
