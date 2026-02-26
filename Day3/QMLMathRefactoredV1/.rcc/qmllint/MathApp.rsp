@@ -1,0 +1,10 @@
+--bare
+-I
+/home/jegan/qt-feb-2026/Day3/QMLMathRefactoredV1
+-I
+/usr/lib64/qt6/qml
+--resource
+/home/jegan/qt-feb-2026/Day3/QMLMathRefactoredV1/.qt/rcc/qmake_App.qrc
+--resource
+/home/jegan/qt-feb-2026/Day3/QMLMathRefactoredV1/.qt/rcc/MathApp_raw_qml_0.qrc
+/home/jegan/qt-feb-2026/Day3/QMLMathRefactoredV1/main.qml

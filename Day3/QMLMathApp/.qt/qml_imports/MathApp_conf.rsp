@@ -1,0 +1,14 @@
+-rootPath
+/home/jegan/qt-feb-2026/Day3/QMLMathApp
+-cmake-output
+-output-file
+/home/jegan/qt-feb-2026/Day3/QMLMathApp/.qt/qml_imports/MathApp_conf.cmake
+-importPath
+/home/jegan/qt-feb-2026/Day3/QMLMathApp/App
+-importPath
+/home/jegan/qt-feb-2026/Day3/QMLMathApp
+-importPath
+/usr/lib64/qt6/qml
+-qrcFiles
+/home/jegan/qt-feb-2026/Day3/QMLMathApp/.qt/rcc/qmake_App.qrc
+/home/jegan/qt-feb-2026/Day3/QMLMathApp/.qt/rcc/MathApp_raw_qml_0.qrc
