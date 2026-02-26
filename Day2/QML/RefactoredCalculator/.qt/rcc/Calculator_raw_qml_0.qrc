@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/App/">
-    <file alias="calculator.qml">/home/jegan/qt-feb-2026/Day2/QML/Calculator/calculator.qml</file>
-  </qresource>
-</RCC>
-
