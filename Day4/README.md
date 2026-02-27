@@ -435,3 +435,86 @@ ApplicationWindow {
 	}
 }	
 </pre>
+
+## Lab - Q_BINDABLE
+
+Notes
+<pre>
+- QBindable<T> is a class introduced in Qt 6 
+- enables native C++ property bindings, similar to how bindings work in QML
+- is part of Qt’s property binding system based on QProperty
+- Before Qt6
+  - Q_PROPERTY + getters/seters + NOTIFY signals were required
+  - Property changes were signal-driven
+  - No automatic reactive binding between C++ properties
+</pre>
+
+Without Q_Bindable MyClassOld.h
+<pre>
+#include <QObject>
+
+class MyClassOld : public QObject
+{
+    Q_OBJECT
+    Q_PROPERTY(int value READ value WRITE setValue NOTIFY valueChanged)
+
+public:
+    explicit MyClassOld(QObject *parent = nullptr)
+        : QObject(parent), m_value(0) {}
+
+    int value() const
+    {
+        return m_value;
+    }
+
+    void setValue(int v)
+    {
+        if (m_value == v)
+            return;
+
+        m_value = v;
+        emit valueChanged();   // ❗ MUST emit manually
+    }
+
+signals:
+    void valueChanged();       // ❗ Required for QML updates
+
+private:
+    int m_value;
+};	
+</pre>
+
+With QBindable Modern version ( works from Qt6 )
+<pre>
+#include <QObject>
+#include <QProperty>
+
+class MyClassNew : public QObject
+{
+    Q_OBJECT
+    Q_PROPERTY(int value READ value WRITE setValue
+               BINDABLE bindableValue)
+
+public:
+    explicit MyClassNew(QObject *parent = nullptr)
+        : QObject(parent), m_value(0) {}
+
+    int value() const
+    {
+        return m_value;
+    }
+
+    void setValue(int v)
+    {
+        m_value = v;   // ❗ No manual signal emit
+    }
+
+    QBindable<int> bindableValue()
+    {
+        return QBindable<int>(&m_value);
+    }
+
+private:
+    QProperty<int> m_value;
+};	
+</pre>
