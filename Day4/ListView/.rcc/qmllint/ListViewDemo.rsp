@@ -1,0 +1,10 @@
+--bare
+-I
+/home/jegan/qt-feb-2026/Day4/ListView
+-I
+/usr/lib64/qt6/qml
+--resource
+/home/jegan/qt-feb-2026/Day4/ListView/.qt/rcc/qmake_App.qrc
+--resource
+/home/jegan/qt-feb-2026/Day4/ListView/.qt/rcc/ListViewDemo_raw_qml_0.qrc
+/home/jegan/qt-feb-2026/Day4/ListView/main.qml

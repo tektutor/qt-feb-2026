@@ -1,0 +1,10 @@
+-I
+/home/jegan/qt-feb-2026/Day4/SwitchingBetweenQMLPages
+-I
+/usr/lib64/qt6/qml
+--resource
+/home/jegan/qt-feb-2026/Day4/SwitchingBetweenQMLPages/.qt/rcc/qmake_App.qrc
+--resource
+/home/jegan/qt-feb-2026/Day4/SwitchingBetweenQMLPages/.qt/rcc/SwithBetweenQMLPages_raw_qml_0.qrc
+--module
+App

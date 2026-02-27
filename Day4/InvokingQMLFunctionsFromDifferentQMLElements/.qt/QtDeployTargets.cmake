@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_InvokingQMLFunctionsFromChildObjects_FILE /home/jegan/qt-feb-2026/Day4/InvokingQMLFunctionsFromDifferentQMLElements/InvokingQMLFunctionsFromChildObjects)
+set(__QT_DEPLOY_TARGET_InvokingQMLFunctionsFromChildObjects_TYPE EXECUTABLE)

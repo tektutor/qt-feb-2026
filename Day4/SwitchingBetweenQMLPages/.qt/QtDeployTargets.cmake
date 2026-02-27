@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_SwithBetweenQMLPages_FILE /home/jegan/qt-feb-2026/Day4/SwitchingBetweenQMLPages/SwithBetweenQMLPages)
+set(__QT_DEPLOY_TARGET_SwithBetweenQMLPages_TYPE EXECUTABLE)

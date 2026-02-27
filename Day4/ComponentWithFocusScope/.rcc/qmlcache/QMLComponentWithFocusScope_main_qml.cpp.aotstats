@@ -1,0 +1,84 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "sourceComponent",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "sourceComponent",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 29
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 140,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 33
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 37
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 59
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 124,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 67
+                    }
+                ],
+                "filePath": "/home/jegan/qt-feb-2026/Day4/ComponentWithFocusScope/main.qml"
+            }
+        ],
+        "moduleId": "App(QMLComponentWithFocusScope)"
+    }
+]

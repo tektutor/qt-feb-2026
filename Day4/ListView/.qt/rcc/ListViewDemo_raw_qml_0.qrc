@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/App/">
+    <file alias="main.qml">/home/jegan/qt-feb-2026/Day4/ListView/main.qml</file>
+  </qresource>
+</RCC>
+

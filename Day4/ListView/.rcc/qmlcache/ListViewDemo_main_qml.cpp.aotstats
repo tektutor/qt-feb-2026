@@ -1,0 +1,68 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"policy\".",
+                        "functionName": "policy",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 11,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 26
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 11,
+                        "durationMicroseconds": 425,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "color",
+                        "line": 28
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 32
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "Cannot access value for name name",
+                        "functionName": "text",
+                        "line": 35
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "Cannot access value for name age",
+                        "functionName": "text",
+                        "line": 40
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onTriggered",
+                        "line": 52
+                    }
+                ],
+                "filePath": "/home/jegan/qt-feb-2026/Day4/ListView/main.qml"
+            }
+        ],
+        "moduleId": "App(ListViewDemo)"
+    }
+]

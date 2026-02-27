@@ -1,0 +1,14 @@
+-rootPath
+/home/jegan/qt-feb-2026/Day4/InvokingQMLFunctionsFromDifferentQMLElements
+-cmake-output
+-output-file
+/home/jegan/qt-feb-2026/Day4/InvokingQMLFunctionsFromDifferentQMLElements/.qt/qml_imports/InvokingQMLFunctionsFromChildObjects_conf.cmake
+-importPath
+/home/jegan/qt-feb-2026/Day4/InvokingQMLFunctionsFromDifferentQMLElements/App
+-importPath
+/home/jegan/qt-feb-2026/Day4/InvokingQMLFunctionsFromDifferentQMLElements
+-importPath
+/usr/lib64/qt6/qml
+-qrcFiles
+/home/jegan/qt-feb-2026/Day4/InvokingQMLFunctionsFromDifferentQMLElements/.qt/rcc/qmake_App.qrc
+/home/jegan/qt-feb-2026/Day4/InvokingQMLFunctionsFromDifferentQMLElements/.qt/rcc/InvokingQMLFunctionsFromChildObjects_raw_qml_0.qrc

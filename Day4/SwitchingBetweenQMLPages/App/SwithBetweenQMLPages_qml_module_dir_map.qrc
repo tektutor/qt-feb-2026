@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/App">/home/jegan/qt-feb-2026/Day4/SwitchingBetweenQMLPages/App</file>
+
+  </qresource>
+</RCC>

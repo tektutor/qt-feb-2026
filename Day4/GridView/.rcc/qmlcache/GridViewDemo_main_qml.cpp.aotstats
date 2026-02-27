@@ -1,0 +1,60 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 10,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 10
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 11,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 11,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "Cannot access value for name name",
+                        "functionName": "text",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 4,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: model",
+                        "functionName": "onTriggered",
+                        "line": 31
+                    }
+                ],
+                "filePath": "/home/jegan/qt-feb-2026/Day4/GridView/main.qml"
+            }
+        ],
+        "moduleId": "App(GridViewDemo)"
+    }
+]

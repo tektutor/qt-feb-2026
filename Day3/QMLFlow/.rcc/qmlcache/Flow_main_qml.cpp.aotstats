@@ -1,0 +1,36 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 10,
+                        "durationMicroseconds": 81,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 11,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 111,
+                        "errorMessage": "Cannot access value for name item",
+                        "functionName": "onItemAdded",
+                        "line": 18
+                    }
+                ],
+                "filePath": "/home/jegan/qt-feb-2026/Day3/QMLFlow/main.qml"
+            }
+        ],
+        "moduleId": "App(Flow)"
+    }
+]

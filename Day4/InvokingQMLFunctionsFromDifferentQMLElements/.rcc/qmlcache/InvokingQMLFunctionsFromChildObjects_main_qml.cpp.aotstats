@@ -1,0 +1,12 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                ],
+                "filePath": "/home/jegan/qt-feb-2026/Day4/InvokingQMLFunctionsFromDifferentQMLElements/main.qml"
+            }
+        ],
+        "moduleId": "App(InvokingQMLFunctionsFromChildObjects)"
+    }
+]
