@@ -8,5 +8,7 @@ public:
 	MyClass();
 	Q_INVOKABLE void cppFunction();
 signals:
-	void cppSignal( QString);
+	void cppSignal( );
+public slots:
+	void onQMLSignal();
 };

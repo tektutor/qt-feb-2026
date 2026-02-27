@@ -7,12 +7,33 @@ ApplicationWindow {
 	width: 500
 	height: 500
 
+	signal qmlSignal()
+
+	Button {
+		text: "Request CPP Signal"
+		onClicked: {
+			console.log( "Emitting qmlSignal ..." )
+			qmlSignal()
+		}
+	}
+
+
 	TekTutorMyClass {
 		id: myClass
+		objectName: "myClassObj"
 
-		onCppSignal:(message) => {
-			console.log(message)
+		onCppSignal:() => {
+			console.log("CPP Signal received")
 		}
 	}		
+
+	/*
+	Connections {
+		target: myClass
+		function qmlSlot() {
+			console.log("CPP Signal received - v2")
+		}
+	}
+	*/
 
 }

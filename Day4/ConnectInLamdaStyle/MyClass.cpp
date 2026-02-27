@@ -2,9 +2,15 @@
 
 MyClass::MyClass() {
 	qDebug() << "MyClass constructor ...";
-	emit cppSignal("CPP Signal triggered");
+	emit cppSignal();
 }
 
 void MyClass::cppFunction() {
 	qDebug() << "Inside MyClass cppFunction ...";
+}
+
+void MyClass::onQMLSignal() {
+	qDebug() << "QML Signal received ...";
+	emit cppSignal();
+	qDebug() << "Emitted cppSignal ...";
 }

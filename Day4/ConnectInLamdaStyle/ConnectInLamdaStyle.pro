@@ -18,3 +18,6 @@ QT += qml quick
 # Input
 HEADERS += MyClass.h
 SOURCES += main.cpp MyClass.cpp
+
+RESOURCES += \
+    qml.qrc
