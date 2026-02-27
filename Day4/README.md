@@ -5,7 +5,7 @@
 export QT_LOGGING_RULES="default.debug=true"
 cmake -B build -DCMAKE_BUILD_TYPE=Debug
 cmake --build build
-./QtSignalWithQMLSlotWithConnectionFromMain
+./Your-QtQML-App
 ```
 
 ## Lab - Component with FocusScope
