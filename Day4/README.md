@@ -233,3 +233,134 @@ ApplicationWindow {
 	}
 }	
 </pre>
+
+## Lab - QML Q_PROPERTY
+
+MyClass.h
+<pre>
+#ifndef MYCLASS_H
+#define MYCLASS_H
+
+#include <QObject>
+#include <QString>
+#include <QDebug>
+
+class MyClass : public QObject {
+Q_OBJECT
+Q_PROPERTY (QString name READ getName WRITE setName)
+private:
+	QString name;
+public:
+	explicit MyClass(QObject *parent = nullptr);
+	Q_INVOKABLE QString getName();
+	Q_INVOKABLE void setName(QString);
+
+	Q_INVOKABLE void onButtonClickedCppMethod();
+};
+
+#endif /* MYCLASS_H */	
+</pre>
+
+MyClass.cpp
+<pre>
+#include "MyClass.h"
+
+MyClass::MyClass(QObject *parent): QObject(parent) {
+}
+
+QString MyClass::getName() {
+	qDebug() << "C++ MyClass getName method invoked ... ";
+	return name;
+}
+
+void MyClass::setName(QString name) {
+	qDebug() << "C++ MyClass setName method invoked ...";
+
+	this->name = name;
+}
+
+void MyClass::onButtonClickedCppMethod() {
+	qDebug() << "MyClass C++ slot method invoked ...";
+}	
+</pre>
+
+main.cpp
+<pre>
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
+
+#include "MyClass.h"
+
+int main(int argc, char **argv) {
+
+	QGuiApplication theApp(argc,argv);
+
+	qmlRegisterType<MyClass>("TekTutor",1,3, "TekTutorMyClass");
+
+	QQmlApplicationEngine engine;
+	engine.load ( QUrl ( QStringLiteral("main.qml") ) );
+
+	MyClass myClass;
+	engine.rootContext()->setContextProperty("MyClass", &myClass);
+
+	return theApp.exec();
+}	
+</pre>	
+
+main.qml
+<pre>
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import TekTutor 1.3
+
+ApplicationWindow {
+	id: topWindow
+
+	width: 500
+	height: 500
+	visible: true
+
+	title: "QML Signal with Qt Slot"
+
+	property string caption: "Click Me"
+
+	TekTutorMyClass {
+		id: myClass
+	}
+
+	Connections {
+		target: topWindow
+	}
+
+	Rectangle {
+		width: parent.width - 20
+		height: parent.height - 20
+		radius: 50
+		color: "steelblue"
+
+		Text {
+			anchors.centerIn: parent
+			text: caption
+			font.pointSize: 25
+
+			MouseArea {
+				anchors.fill: parent
+
+				onClicked: {
+					//Set property
+					myClass.name = "MyClass"
+					console.log ("Mouse clicked" + myClass.name )
+					//Get Property
+					caption = myClass.name
+
+					//Invoking C++ method from QML
+					myClass.onButtonClickedCppMethod()
+					myClass.setName("From QML")
+					console.log(myClass.getName())
+				}
+			}
+		}
+	}
+}	
+</pre>
