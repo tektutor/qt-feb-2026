@@ -519,7 +519,7 @@ private:
 };	
 </pre>
 
-## Info - Fixing Segmentation and Core Dumps
+## Info - Debugging and Fixing Segmentation and Core Dumps
 
 ### Using deleted object
 <pre>
