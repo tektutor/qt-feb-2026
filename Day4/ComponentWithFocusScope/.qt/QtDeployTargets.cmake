@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_QMLComponentWithFocusScope_FILE /home/jegan/qt-feb-2026/Day4/ComponentWithFocusScope/QMLComponentWithFocusScope)
-set(__QT_DEPLOY_TARGET_QMLComponentWithFocusScope_TYPE EXECUTABLE)

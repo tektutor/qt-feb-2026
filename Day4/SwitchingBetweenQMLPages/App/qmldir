@@ -1,4 +1,0 @@
-module App
-typeinfo SwithBetweenQMLPages.qmltypes
-prefer :/qt/qml/App/
-
