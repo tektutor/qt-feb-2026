@@ -9,6 +9,36 @@ cmake --build build
 ```
 
 ## Lab - Invoking QML Functions from Qt(C++)
+MyClass.h
+<pre>
+#include <QObject>
+#include <QDebug>
+#include <QString>
+
+class MyClass : public QObject {
+Q_OBJECT
+public:
+	MyClass();
+	~MyClass();
+signals:
+	void customQtSignal(QString);
+};	
+</pre>
+
+MyClass.cpp
+<pre>
+#include "MyClass.h"
+
+MyClass::MyClass() {
+	qDebug() << "MyClass constructor ...";
+	emit customQtSignal("MyClass custom Qt signal");
+}
+
+MyClass::~MyClass() {
+	qDebug() << "MyClass destructor ...";
+}	
+</pre>
+
 main.cpp
 <pre>
 #include <QGuiApplication>
