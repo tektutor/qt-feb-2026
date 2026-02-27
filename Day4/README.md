@@ -2,6 +2,25 @@
 
 ## Lab - Component with FocusScope
 
+Normally in QML, objects are created immediately when the file loads
+<pre>
+Rectangle {
+    width: 100
+    height: 100
+}
+</pre>
+
+Components are useful in the below scenarios
+<pre>
+- You wish to create objects later
+- You may create objects multiple times
+- You would like to create objects dynamically
+- to use with Loader
+- to use in ListView delegates
+- to use in Repeater
+- Memory optimization
+</pre>	
+
 main.qml
 <pre>
 import QtQuick 2.15
