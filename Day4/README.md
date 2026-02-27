@@ -518,3 +518,87 @@ private:
     QProperty<int> m_value;
 };	
 </pre>
+
+## Info - Fixing Segmentation and Core Dumps
+
+### Using deleted object
+<pre>
+QObject *pObj = new QObject;
+delete pObj;
+pObj->setObjectName("one way to invite crash"); 	
+</pre>
+
+How to fix? 
+- use QPointer
+- QPointer becomes nullptr automatically when object deleted
+<pre>
+QPointer<QObject> obj;	
+</pre>
+
+
+### Never manually delete child of QObject with parent
+
+<pre>
+QObject *child = new QObject(parent);
+delete child; //  If parent deletes again → crash	
+</pre>
+
+### Accessing GUI from worker threads
+<pre>
+label->setText("hello"); 	
+</pre>
+
+What is the correct way to deal with this scenario?
+- consider using signal
+- or you can follow the below approach
+- However, using signals and slots is the best approach 
+<pre>
+QMetaObject::invokeMethod(label, "setText",
+                          Qt::QueuedConnection,
+                          Q_ARG(QString, "hello"));	
+</pre>
+
+### May be some signal emitted and the slot provider got deleted already
+Fix
+<pre>
+connect(sender, &Sender::signal,
+        receiver, &Receiver::slot,
+        Qt::AutoConnection);	
+</pre>
+
+### Using a stack allocated object via a global pointer
+<pre>
+void foo() {
+    QObject obj;
+    pSomeGlobalPointer = &obj;  // this will crash later
+}
+</pre>
+
+### Qt/QML Crash debugging
+<pre>
+QT_LOGGING_RULES="qt.qml.*=true" ./MyApp	
+</pre>
+
+### Check for binding loops
+
+### Use QObject Tree ( Very useful while debugging Crash )
+<pre>
+QObject::dumpObjectTree();	
+</pre>
+
+### Update your CMakeLists.txt
+<pre>
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
+set(CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} -fsanitize=address")	
+</pre>
+
+Rebuild
+<pre>
+cmake -B build -DCMAKE_BUILD_TYPE=Debug
+cmake --build build	
+</pre>
+
+### Use Valgrind
+<pre>
+valgrind --tool=memcheck ./MyApp	
+</pre>
